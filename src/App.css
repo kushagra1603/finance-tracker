@@ -1,0 +1,99 @@
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  height: 90vh ;
+  margin-left: 0;
+  padding: 0 5%;
+  
+}
+.container{
+  background-image: url(assets/transactions.svg);
+  background-size: 25%;
+  background-repeat:repeat-y;
+  background-color:rgb(240, 240, 233);
+  animation: scrollBackground 10s ease-in-out infinite;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+@keyframes scrollBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    width: 100vw;
+    height: auto; 
+  }
+
+  .text-container {
+    width: 100%; 
+    padding-right: 1rem; 
+    margin-right: 10px;
+  }
+
+  .container-2 {
+    flex-direction: column; 
+    margin-left: 0;
+    height: 100%;
+  }
+}
+
+.wrapper, .container, .text-container {
+  overflow: hidden; 
+}
+.text-container{
+  height: 90vh;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; 
+  margin-right: 10%; 
+  box-sizing: border-box;
+}
+.container-2{
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 20%;
+}
+
+.fading-text p {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: var(--delay);
+}
+
+.fading-text h3 {
+  --delay: 1s;
+  animation-duration: 2s; 
+}
+.fading-text h5 {
+  --delay: 1.5s;
+  animation-duration: 2s; 
+}
+
+.fading-text p:nth-of-type(1) {
+  --delay: 2s;
+}
+
+.fading-text p:nth-of-type(2) {
+  --delay: 3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

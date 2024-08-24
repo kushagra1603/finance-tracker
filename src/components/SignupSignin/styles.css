@@ -1,0 +1,40 @@
+.signup-wrapper{
+  width: 70%;
+  max-width: 400px;
+  height: auto;
+  box-shadow: 0px 0px 25px 4px rgba(227, 227, 227, 0.75);
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  background-color: white;
+  transform: scale(0.5); /* Start with a smaller scale */
+  animation: popup 0.5s ease-in-out forwards;
+}
+
+.title{
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.p-login{
+  text-align: center;
+  margin: 0;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+@keyframes popup {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+

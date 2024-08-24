@@ -1,0 +1,53 @@
+.input-flex{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: var(--shadow-box);
+  gap: 0.5rem;
+  padding: 0rem 0.5rem;
+  margin: 1rem 0.2rem;
+  height: 2rem;
+}
+.input-flex input{
+  width: 100%;
+  padding: 0.22rem 0.2rem;
+  margin: 1rem 0.3rem;
+  border:none;
+}
+.input-flex img{
+  width: 1.5rem;
+  padding: 0.3rem;
+  border: 0;
+  color: green;
+ }
+.input-flex input:focus{
+  outline: none;
+}
+
+.select-input{
+margin: 1rem 0.5rem;
+width: 45%;
+box-shadow: var(--shadow-box);
+}
+.inputandselect{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.analysissorts{
+  display: flex;
+  align-items: center;
+ justify-content: center;
+  margin: 0.75rem;
+ 
+}
+.heading{
+  display: flex;
+  justify-content: center;
+  font-size: medium;
+  color:black ;
+  font-weight: bolder;
+}

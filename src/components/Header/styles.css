@@ -1,0 +1,90 @@
+/* Navbar styling */
+.navbar {
+  position: sticky;
+  width: 100%;
+  height: fit-content;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-sizing: border-box; 
+  overflow: hidden;
+  border-bottom: 4px solid black;
+}
+
+/* Light theme for navbar */
+.navbar.light {
+  background-color: var(--theme);
+  color: #000000;
+  border-bottom: 1px solid black;
+}
+
+/* Dark theme for navbar */
+.navbar.dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-bottom: 1px solid white;
+}
+
+/* Logo styling */
+.logo {
+  color: "black";
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Adjust logo color based on theme */
+.navbar.light .logo {
+  color: #000000;
+}
+
+.navbar.dark .logo {
+  color: #ffffff;
+}
+
+/* Link styling */
+.link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.8;
+  cursor: pointer;
+  margin-right: 2.25rem;
+  box-sizing: content-box;
+  color: inherit; /* Inherits color based on theme */
+}
+
+.link:hover {
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+/* Logo image styling */
+.logo-image {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 0.5rem;
+}
+
+/* Theme toggle button styling */
+.theme-toggle {
+  background: none;
+  border: none;
+  color: inherit; /* Inherits color based on theme */
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 500;
+  opacity: 0.8;
+  margin-right: 1rem;
+}
+
+.theme-toggle:hover {
+  opacity: 1;
+  transition: all 0.2s;
+}
